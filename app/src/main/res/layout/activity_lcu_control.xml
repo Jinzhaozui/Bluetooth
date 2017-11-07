@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_device_address"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/device_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_state"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/connection_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disconnected"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_data"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/data_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_data"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_data"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/data_source_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_mode"
+                        android:textSize="12sp"
+                        android:visibility="gone" />  <!-- 正常模式 -->
+                    <Button
+                        android:id="@+id/btn_connect"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_connect"
+                        android:textSize="12sp" /> <!-- 闭合继电器 -->
+
+                    <Button
+                        android:id="@+id/btn_disconnect"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_disconnect"
+                        android:textSize="12sp" /><!-- 断开继电器 -->
+
+                    <Button
+                        android:id="@+id/btn_write_period"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_set_period_disconnect"
+                        android:textSize="12sp" /><!-- 定时断开继电器 -->
+
+                    <Button
+                        android:id="@+id/btn_read_command"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_command"
+                        android:textSize="12sp"
+                        android:visibility="visible" /><!-- 读命令 -->
+
+                    <Button
+                        android:id="@+id/btn_read_pulse_status"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_command"
+                        android:visibility="gone"
+                        android:textSize="12sp" /><!-- 脉冲状态 -->
+                    <Button
+                        android:id="@+id/btn_read_pulse_switch"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:textSize="12sp"
+                        android:visibility="gone" /><!-- 秒脉冲和电能切换 -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_read_meter"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_read_meter"
+                        android:textSize="12sp" /><!-- 读表 -->
+                    <Button
+                        android:id="@+id/btn_read_time"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_time"
+                        android:textSize="12sp" /><!-- 读时间 -->
+                    <Button
+                        android:id="@+id/btn_write_time"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_write_time"
+                        android:textSize="12sp" /><!-- 写时间 -->
+                    <Button
+                        android:id="@+id/btn_read_period"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_period"
+                        android:textSize="12sp" /><!-- 读时段 -->
+                    <Button
+                        android:id="@+id/btn_read_state"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_lcu_state"
+                        android:textSize="12sp" /><!-- 读状态 -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btn_check_code"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_check_code"
+                        android:textSize="12sp" /><!-- 程序校验码 -->
+                    <Button
+                        android:id="@+id/btn_read_version"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_read_version"
+                        android:textSize="12sp" /><!-- 内控测试软件版本号 -->
+                    <Button
+                        android:id="@+id/btn_embedded_version"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_embedded_version"
+                        android:textSize="12sp" /><!-- 当前嵌入式软件版本号 -->
+                    <Button
+                        android:id="@+id/btn_write_direct_communication"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_write_direct_communication"
+                        android:textSize="12sp" /><!-- 直接通讯 -->
+                    <Button
+                        android:id="@+id/btn_read_lcu_channel"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/background_corner"
+                        android:text="@string/str_read_lcu_channel"
+                        android:textSize="12sp" /><!-- 继电器通道数 -->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_meter_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Input Meter Number"
+                android:inputType="number"
+                android:maxLength="11" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_write_meter"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_corner"
+                    android:text="@string/str_write_meter"
+                    android:textSize="12sp" /><!-- 写序列号 -->
+
+                <Button
+                    android:id="@+id/btn_map"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_corner"
+                    android:text="@string/str_map"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <cn.qqtheme.framework.widget.WheelView
+            android:id="@+id/wheel_view_single"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

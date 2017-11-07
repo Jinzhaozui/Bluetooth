@@ -1,0 +1,17 @@
+com.hexing.cardReaderBluetooth.api.HexReaderClient
+com.hexing.cardReaderBluetooth.api.HexReaderClient$1
+com.hexing.cardReaderBluetooth.api.HexReaderClient$2
+com.hexing.cardReaderBluetooth.api.HexReaderClient$2$1
+com.hexing.cardReaderBluetooth.api.HexReaderClient$3
+com.hexing.cardReaderBluetooth.api.HexReaderClient$4
+com.hexing.cardReaderBluetooth.api.HexReaderClient$5
+com.hexing.cardReaderBluetooth.api.HexReaderClient$6
+com.hexing.cardReaderBluetooth.api.HexReaderClient$7
+com.hexing.cardReaderBluetooth.api.HexReaderClient$8
+com.hexing.cardReaderBluetooth.bean.CardReadBean
+com.hexing.cardReaderBluetooth.bean.CardReadBean$ReadBean
+com.hexing.cardReaderBluetooth.bean.CardWriteBean
+com.hexing.cardReaderBluetooth.bean.CardWriteBean$VerifyBean
+com.hexing.cardReaderBluetooth.bean.CardWriteBean$WriteBean
+com.hexing.cardReaderBluetooth.receiver.BluetoothReceiver
+com.hexing.cardReaderBluetooth.services.BluetoothLeService

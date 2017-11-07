@@ -1,0 +1,177 @@
+com.hexing.cardReaderBluetooth.BuildConfig
+com.hexing.cardReaderBluetooth.CardUtils:
+    22:22:public CardUtils()
+    36:46:public static java.lang.String toHexString(byte[])
+com.hexing.cardReaderBluetooth.HexCallback:
+    public abstract void onConnectSuccess()
+    public abstract void onReadSuccess(java.lang.String)
+    public abstract void onWriteSuccess()
+com.hexing.cardReaderBluetooth.HexCardType
+com.hexing.cardReaderBluetooth.HexCardType$Card_4428
+com.hexing.cardReaderBluetooth.HexCardType$Card_4442
+com.hexing.cardReaderBluetooth.HexError
+com.hexing.cardReaderBluetooth.HexReaderClient
+com.hexing.cardReaderBluetooth.HexReaderClient$1
+com.hexing.cardReaderBluetooth.HexReaderClient$2
+com.hexing.cardReaderBluetooth.HexReaderClient$2$1
+com.hexing.cardReaderBluetooth.HexReaderClient$3
+com.hexing.cardReaderBluetooth.HexReaderClient$4
+com.hexing.cardReaderBluetooth.HexReaderClient$5
+com.hexing.cardReaderBluetooth.HexReaderClient$6
+com.hexing.cardReaderBluetooth.HexReaderClient$7
+com.hexing.cardReaderBluetooth.HexReaderClient$8
+com.hexing.cardReaderBluetooth.SharedPreferencesTool
+com.hexing.cardReaderBluetooth.UrlConfig
+com.hexing.cardReaderBluetooth.api.HexReaderClient:
+    private java.lang.String deviceName
+    private java.lang.String deviceAddress
+    private android.content.Context context
+    private static volatile com.hexing.cardReaderBluetooth.api.HexReaderClient instance
+    private com.acs.bluetooth.BluetoothReaderManager mBluetoothReaderManager
+    private com.acs.bluetooth.BluetoothReaderGattCallback mGattCallback
+    private android.bluetooth.BluetoothGatt mBluetoothGatt
+    54:61:public static com.hexing.cardReaderBluetooth.api.HexReaderClient getInstance()
+    70:71:public void init(android.content.Context)
+    80:131:public void init(android.content.Context,com.hexing.cardReaderBluetooth.HexCallback)
+    139:140:public void addCallback(com.hexing.cardReaderBluetooth.HexCallback)
+    148:149:public void setDebugMode(java.lang.Boolean)
+    158:163:public java.lang.String getErrorStr(int)
+    173:176:public void connect(java.lang.String,java.lang.String)
+    185:200:public void read(java.lang.String,java.lang.String)
+    209:219:private void readCard4442(java.lang.String,java.lang.String)
+    226:237:private void readCard4428(int,int)
+    245:258:public void write(java.lang.String)
+    266:302:private void writeVerifyCard(java.lang.String)
+    310:344:private void writeVerifyPassword(java.lang.String)
+    348:365:private void writeBackup(java.lang.String)
+    372:424:private void writeCard()
+    430:468:private void writePassword(java.lang.String)
+    476:485:private void writePassBack(java.lang.String)
+    493:493:public int getCardType()
+    504:530:private java.util.List getCommand(int,int)
+    551:645:private void setListener()
+    649:654:private java.lang.String getResponseString(byte[],int)
+    659:688:private java.lang.String getErrorString(int)
+    697:715:private boolean verify()
+    723:763:private boolean connectReader()
+    768:773:public void disconnectReader()
+    34:34:static synthetic android.bluetooth.BluetoothGatt access$200(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic com.acs.bluetooth.BluetoothReaderGattCallback access$300(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic com.acs.bluetooth.BluetoothReaderManager access$400(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic com.acs.bluetooth.BluetoothReader access$502(com.hexing.cardReaderBluetooth.api.HexReaderClient,com.acs.bluetooth.BluetoothReader)
+    34:34:static synthetic android.bluetooth.BluetoothGatt access$202(com.hexing.cardReaderBluetooth.api.HexReaderClient,android.bluetooth.BluetoothGatt)
+    34:34:static synthetic void access$600(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic boolean access$1100(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic int access$902(com.hexing.cardReaderBluetooth.api.HexReaderClient,int)
+    34:34:static synthetic java.lang.String access$1200(com.hexing.cardReaderBluetooth.api.HexReaderClient,byte[],int)
+    34:34:static synthetic int access$1300(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic java.lang.StringBuilder access$1400(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic int access$1306(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic int access$1302(com.hexing.cardReaderBluetooth.api.HexReaderClient,int)
+    34:34:static synthetic java.lang.String access$1000(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    34:34:static synthetic void access$1500(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.String)
+    34:34:static synthetic void access$1600(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.String)
+    34:34:static synthetic void access$1700(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.String)
+    34:34:static synthetic void access$1800(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.String)
+    34:34:static synthetic void access$1900(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.String)
+    34:34:static synthetic java.lang.StringBuilder access$1402(com.hexing.cardReaderBluetooth.api.HexReaderClient,java.lang.StringBuilder)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$1:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    85:85:HexReaderClient$1(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    88:108:public void onConnectionStateChange(android.bluetooth.BluetoothGatt,int,int)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$2:
+    110:110:HexReaderClient$2(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    113:128:public void onReaderDetection(com.acs.bluetooth.BluetoothReader)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$2$1:
+    117:117:HexReaderClient$2$1(com.hexing.cardReaderBluetooth.api.HexReaderClient$2)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$3:
+    372:372:HexReaderClient$3(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$4:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    552:552:HexReaderClient$4(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    555:558:public void onAuthenticationComplete(com.acs.bluetooth.BluetoothReader,int)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$5:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    562:562:HexReaderClient$5(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    565:567:public void onCardStatusAvailable(com.acs.bluetooth.BluetoothReader,int,int)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$6:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    570:570:HexReaderClient$6(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    573:580:public void onAtrAvailable(com.acs.bluetooth.BluetoothReader,byte[],int)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$7:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    583:583:HexReaderClient$7(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    586:587:public void onEscapeResponseAvailable(com.acs.bluetooth.BluetoothReader,byte[],int)
+com.hexing.cardReaderBluetooth.api.HexReaderClient$8:
+    final synthetic com.hexing.cardReaderBluetooth.api.HexReaderClient this$0
+    590:590:HexReaderClient$8(com.hexing.cardReaderBluetooth.api.HexReaderClient)
+    593:643:public void onResponseApduAvailable(com.acs.bluetooth.BluetoothReader,byte[],int)
+com.hexing.cardReaderBluetooth.bean.CardReadBean:
+    private com.hexing.cardReaderBluetooth.bean.CardReadBean$ReadBean read
+    20:20:public com.hexing.cardReaderBluetooth.bean.CardReadBean$ReadBean getRead()
+    24:25:public void setRead(com.hexing.cardReaderBluetooth.bean.CardReadBean$ReadBean)
+com.hexing.cardReaderBluetooth.bean.CardReadBean$ReadBean:
+    private java.util.List offset
+    private java.util.List value
+    32:32:public java.util.List getOffset()
+    36:37:public void setOffset(java.util.List)
+    40:40:public java.util.List getValue()
+    44:45:public void setValue(java.util.List)
+com.hexing.cardReaderBluetooth.bean.CardWriteBean:
+    private com.hexing.cardReaderBluetooth.bean.CardWriteBean$VerifyBean verify
+    private java.lang.String oldPassword
+    private java.lang.String newPassword
+    34:34:public int getPasswordOffset()
+    42:42:public java.lang.String getPasswordData()
+    50:50:public java.lang.String getNewPassword()
+    54:55:public void setNewPassword(java.lang.String)
+    58:58:public com.hexing.cardReaderBluetooth.bean.CardWriteBean$VerifyBean getVerify()
+    62:63:public void setVerify(com.hexing.cardReaderBluetooth.bean.CardWriteBean$VerifyBean)
+    66:66:public java.lang.String getOldPassword()
+    70:71:public void setOldPassword(java.lang.String)
+    78:79:public void setWrite(com.hexing.cardReaderBluetooth.bean.CardWriteBean$WriteBean)
+com.hexing.cardReaderBluetooth.bean.CardWriteBean$VerifyBean:
+    private java.util.List offset
+    private java.util.List value
+    86:86:public java.util.List getOffset()
+    90:91:public void setOffset(java.util.List)
+    94:94:public java.util.List getValue()
+    98:99:public void setValue(java.util.List)
+com.hexing.cardReaderBluetooth.bean.CardWriteBean$WriteBean:
+    111:112:public void setOffset(java.util.List)
+    119:120:public void setValue(java.util.List)
+com.hexing.cardReaderBluetooth.receiver.BluetoothReceiver:
+    private android.content.Context context
+    public static final int ACTION_GATT_CONNECTED
+    public static final int ACTION_GATT_DISCONNECTED
+    public static final int ACTION_GATT_SERVICES_DISCOVERED
+    public static final int ACTION_DATA_AVAILABLE
+    30:35:public BluetoothReceiver(android.content.Context,android.os.Handler)
+    72:75:public void register(com.hexing.cardReaderBluetooth.receiver.BluetoothReceiver)
+    78:81:public void unRegister(com.hexing.cardReaderBluetooth.receiver.BluetoothReceiver)
+    84:89:private static android.content.IntentFilter makeGattUpdateIntentFilter()
+com.hexing.cardReaderBluetooth.services.BluetoothLeService:
+    private static final int STATE_DISCONNECTED
+    private static final int STATE_CONNECTING
+    private static final int STATE_CONNECTED
+    public static final java.lang.String ACTION_GATT_CONNECTED
+    public static final java.lang.String ACTION_GATT_DISCONNECTED
+    public static final java.lang.String ACTION_GATT_SERVICES_DISCOVERED
+    public static final java.lang.String ACTION_DATA_AVAILABLE
+    public static final java.lang.String EXTRA_DATA
+    172:175:public static synchronized com.hexing.cardReaderBluetooth.services.BluetoothLeService getInstance()
+    286:291:public void disconnect()
+    313:318:public void readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
+    321:326:public void writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)
+    336:360:public void setCharacteristicNotification(android.bluetooth.BluetoothGattCharacteristic,boolean)
+    369:371:public java.util.List getSupportedGattServices()
+    375:380:public android.bluetooth.BluetoothGattService getService(java.util.UUID)
+    384:389:public android.bluetooth.BluetoothGattCharacteristic getCharacteristic(android.bluetooth.BluetoothGattService,java.util.UUID)
+    394:394:public android.bluetooth.BluetoothGatt getBluetoothGatt()
+com.hexing.cardReaderBluetooth.services.SampleGattAttributes:
+    public static final java.lang.String METER_WRITE_SERVICE
+    public static final java.lang.String METER_WRITE_CHARACTERISTIC
+    public static final java.lang.String METER_NOTIFY_SERVICE
+    public static final java.lang.String METER_NOTIFY_CHARACTERISTIC
+    24:24:public SampleGattAttributes()
+    45:46:public static java.lang.String lookup(java.lang.String,java.lang.String)

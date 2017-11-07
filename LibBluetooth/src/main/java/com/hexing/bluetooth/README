@@ -1,0 +1,7 @@
+蓝牙资源库
+使用步骤
+1.HexClientAPI.getInstance().init() 初始化
+2.HexClientAPI.getInstance().scanDevice(); 验证是否能扫描到相应的蓝牙设备
+3.HexClientAPI.getInstance().connect(); 蓝牙连接
+4.调用蓝牙读写指令
+5.HexClientAPI.getInstance().onDestroy(); 结束调用

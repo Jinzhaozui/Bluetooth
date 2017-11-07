@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">LCY</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="ready">ready</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">Meter Console</string>
+    <string name="lcu_title_devices">LCU Console</string>
+
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <string name="str_meter">Meter Bluetooth</string>
+    <string name="str_lcu">LCU Bluetooth</string>
+    <string name="bluetooth_card">Card Bluetooth</string>
+    <string name="str_mode">Normal Mode</string>
+    <string name="str_cancel_alarm">Cancel Alarm</string>
+    <string name="str_eme_over">Emergency Overdraft</string>
+
+    <string name="loading">Please Wait....</string>
+    <string name="please_connect_bluetooth_device">Connecting the Bluetooth device, please wait later...</string>
+
+    <!--LCU-->
+    <string name="str_read_meter">Read Meter</string>
+    <string name="str_lcu_time">Read Time</string>
+    <string name="str_write_time">Write Time</string>
+    <string name="str_lcu_period">Read Period</string>
+    <string name="str_lcu_set_period_connect">Set LCU Connect Time</string>
+    <string name="str_lcu_set_period_disconnect">Set LCU Period Time</string>
+    <string name="str_lcu_state">Read State</string>
+    <string name="str_lcu_command">Read Command</string>
+    <string name="str_read_version">Read Internal Control Version</string>
+    <string name="str_embedded_version">Read Embedded Version</string>
+    <string name="str_read_lcu_channel">Read LCU Channel Number</string>
+    <string name="str_write_direct_communication">Write Direct Communication</string>
+    <string name="str_check_code">Read Check Code</string>
+    <string name="str_write_meter">Write Meter Number</string>
+    <string name="str_map">Map</string>
+    <string name="str_lcu_disconnect">LCU Disconnect</string>
+    <string name="str_lcu_connect">LCU Connect</string>
+    <string name="action_result">Success</string>
+    <string name="str_add_time_period">Add Time</string>
+    <string name="delete">Delete</string>
+    <string name="str_time">Time</string>
+    <string name="str_hour">%s Hour</string>
+    <string name="str_minute">%s Minute</string>
+    <string name="disconnect_state">Disconnected</string>
+    <string name="connect_state">Connected</string>
+    <string name="str_max_period">Currently only 12 Period</string>
+    <string name="empty_header_str" />
+    <string name="command_success">Command Success</string>
+
+    <!--蓝牙卡-->
+    <string name="apdu_command">APDU command</string>
+    <string name="atr">ATR</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="authentication_key">Authentication Key</string>
+    <string name="battery_service">Battery service</string>
+    <string name="battery_level">Battery level: </string>
+    <string name="battery_status">Battery status: </string>
+    <string name="card_reader_not_ready">Card reader is not ready</string>
+    <string name="card_status_2">Card status: </string>
+    <string name="clear">Clear</string>
+    <string name="connection_status">Connection status: </string>
+    <string name="device_info">Device Info</string>
+    <string name="escape_command">Escape command</string>
+    <string name="fw_revision">FW revision: </string>
+    <string name="hw_revision">HW revision: </string>
+    <string name="get_battery_level">Get Battery Level</string>
+    <string name="get_battery_status">Get Battery Status</string>
+    <string name="get_device_info">Get Device Info</string>
+    <string name="get_card_status">Get Card Status</string>
+    <string name="set_tx_power">Set Tx Power</string>
+    <string name="manufacturer">Manufacturer: </string>
+    <string name="model_num">Model Num: </string>
+    <string name="noData"></string>
+    <string name="power_off_card">Power Off Card</string>
+    <string name="power_on_card">Power On Card</string>
+    <string name="serial_num">Serial Num: </string>
+    <string name="card_status">Card Status</string>
+    <string name="start_polling">Start Polling</string>
+    <string name="status_change_notifications">Status change notifications</string>
+    <string name="stop_polling">Stop Polling</string>
+    <string name="system_id">System ID: </string>
+    <string name="transmit_apdu">Transmit APDU</string>
+    <string name="transmit_escape_command">Transmit Escape Command</string>
+
+    <!-- Connection status -->
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting</string>
+    <string name="connect_fail">Fail to connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="disconnect_fail">Fail to disconnect</string>
+
+
+    <string-array name="tx_power_values">
+        <item>-23 dBm</item>
+        <item>-6 dBm</item>
+        <item>0 dBm</item>
+        <item>4 dBm</item>
+    </string-array>
+</resources>

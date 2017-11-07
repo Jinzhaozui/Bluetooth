@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bluetooth_model_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bluetooth.le.activity.BluetoothModelControlActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_device_address"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_state"
+        android:textSize="18sp" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnected"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_data"
+        android:textSize="18sp" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/data_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="接收通知"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_corner"
+        android:text="Normal Mode"
+        android:visibility="gone"
+        android:textSize="12sp" />  <!-- 正常模式 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_corner"
+        android:text="Cancel Alarm"
+        android:textSize="12sp" /> <!-- 取消声音报警 -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_corner"
+        android:text="Emergency Overdraft "
+        android:textSize="12sp" /> <!-- 紧急透支 -->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_corner"
+            android:text="Relay Operation Reason"
+            android:textSize="12sp" /><!-- 继电器操作原因 -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/background_corner"
+        android:text="Meter Balance "
+        android:textSize="12sp" /><!-- 查询电表余额 -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_corner"
+        android:text="Active energy"
+        android:textSize="12sp" /><!-- 正向有功总电能 -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/background_corner"
+        android:text="Monthly Freezing Information"
+        android:textSize="12sp" /><!-- 月冻结电能信息 -->
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/background_corner"
+        android:text="Daily Freezing Information"
+        android:textSize="12sp" /><!-- 日冻结电能信息 -->
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="月冻结预付费信息"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="日冻结预付费信息"
+        android:textSize="12sp"
+        android:visibility="gone" />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="月冻结特殊信息包"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_freeze"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="冻结信息查询"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/background_corner"
+            android:visibility="visible" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/token"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Input Token" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_corner"
+            android:text="TOKEN"
+            android:textSize="12sp" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

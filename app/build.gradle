@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.example.bluetooth.le"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 2
+        versionName "2.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-android.txt'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        maven { url "https://jitpack.io" }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(path: ':cardReaderBluetooth')
+    compile project(path: ':LibBluetooth')
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    //    compile (name:'HexBluetooth', ext:'aar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    //compile 'org.litepal.android:core:1.4.1'
+    //compile project(':core')
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+
+}
+
+
